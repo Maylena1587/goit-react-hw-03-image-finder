@@ -117,7 +117,7 @@ class App extends Component {
 
         {isLoading && <LoaderComponent />}
 
-        {!isLoading && images.length > 0 && (
+        {!isLoading && images.length > 12 && !error && (
           <Button onLoadMore={this.onLoadMore} />
         )}
 
